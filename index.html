@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Mentor | Base Apparel coming soon page</title>
+    <link
+      rel="shortcut icon"
+      href="img/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link rel="stylesheet" href="css/style.css" /> -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <div class="company-logo">
+        <img class="company-logo__img" src="img/logo.svg" alt="Logo" />
+      </div>
+      <div class="banner"></div>
+      <div class="content">
+        <div class="release">
+          <h1 class="release__title">
+            <span class="release__title release__title--stylized">WE'RE </span>
+            <br />
+            COMING SOON
+          </h1>
+          <p class="release__paragraph">
+            Hello fellow shoppers! We're currently building our new fashion
+            store. Add your email below to stay up-to-date with announcements
+            and our launch deals.
+          </p>
+        </div>
+        <form class="email-form" id="emailForm" novalidate>
+          <div class="email-form__group">
+            <input
+              class="email-form__input"
+              type="email"
+              id="emailAddress"
+              name="email_address"
+              placeholder="Email Address"
+              required
+            />
+            <button class="email-form__button" type="submit">
+              <img
+                class="email-form__img"
+                src="img/icon-arrow.svg"
+                alt="Submit"
+              />
+            </button>
+          </div>
+          <p
+            class="validation-message"
+            id="validationMessage"
+            aria-live="polite"
+          ></p>
+        </form>
+        <footer>
+          <p class="attribution">
+            Challenge by
+            <a
+              class="attribution__link"
+              href="https://www.frontendmentor.io?ref=challenge"
+              rel="noopener"
+              target="_blank"
+              >Frontend Mentor</a
+            >. Code by
+            <a
+              class="attribution__link"
+              href="https://www.frontendmentor.io/profile/tu1ip"
+              >tul1p</a
+            >.
+          </p>
+        </footer>
+      </div>
+    </main>
+    <script src="js/script.js"></script>
+  </body>
+</html>
