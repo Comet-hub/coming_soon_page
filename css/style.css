@@ -1,72 +1,73 @@
-:root{
-  --desaturated-red:  hsl(0, 36%, 70%);
+:root {
+  --desaturated-red: hsl(0, 36%, 70%);
   --soft-red: hsl(0, 93%, 68%);
   --dark-grayish-red: hsl(0, 6%, 24%);
 }
-body{
+body {
   margin: 0;
-  font: 16px 'Josefin Sans', sans-serif;
-  background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%)) no-repeat center center fixed;
+  font: 16px "Josefin Sans", sans-serif;
+  background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%))
+    no-repeat center center fixed;
   background-size: cover;
   position: relative;
 }
-.container{
+.container {
   display: grid;
   grid-template-columns: 2rem 1fr 2rem;
   grid-template-rows: 1fr;
   /* height: 100vh; */
 }
-.company-logo{
+.company-logo {
   grid-column: 2 / 3;
   display: flex;
   align-items: center;
   padding: 1em 0;
 }
-.company-logo__img{
+.company-logo__img {
   height: 20px;
   width: auto;
 }
-.banner{
+.banner {
   background: url("../img/hero-mobile.jpg");
   background-size: cover;
   height: 250px;
   grid-column: 1 / -1;
 }
-.content{
+.content {
   grid-column: 2 / 3;
   width: 100%;
   margin-top: 2.1em;
 }
-.release{
+.release {
   text-align: center;
   margin: 2em auto;
 }
-.release__title{
+.release__title {
   color: var(--dark-grayish-red);
   font-size: 2.5em;
   letter-spacing: 11px;
   line-height: 1.05;
   margin: 1rem auto;
 }
-.release__title--stylized{
+.release__title--stylized {
   color: var(--desaturated-red);
   font-size: inherit;
   font-weight: 300;
 }
-.release__paragraph{
+.release__paragraph {
   color: var(--desaturated-red);
   font-size: 0.9em;
   line-height: 1.5;
   margin: 0;
 }
-.email-form__group{
+.email-form__group {
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
 }
-.email-form{
-  margin: 1em auto;
+.email-form {
+  margin: 1em auto 4em auto;
 }
 .email-form__input {
   color: var(--dark-grayish-red);
@@ -94,66 +95,79 @@ body{
   padding-right: 32%;
   outline: 1px solid var(--soft-red);
 }
-.email-form__button{
-  background-image: linear-gradient(135deg, hsla(0, 80%, 86%,1), hsla(0, 74%, 74%, 1));
+.email-form__button {
+  background-image: linear-gradient(
+    135deg,
+    hsla(0, 80%, 86%, 1),
+    hsla(0, 74%, 74%, 1)
+  );
   border: none;
   border-radius: 30px;
-  height: 100%; 
+  height: 100%;
   width: 22%;
   position: absolute;
   right: 0;
   box-shadow: 0 10px 20px 0 rgba(206, 151, 151, 0.4);
-  transition: 0.5s;
+  transition: 0.2s;
   cursor: pointer;
 }
-.email-form__button:hover{
-  background-image: linear-gradient(135deg, hsla(0, 80%, 86%, 0.5), hsla(0, 74%, 74%, 0.5));
-  box-shadow: 0 15px 20px 0 rgba(206, 151, 151,0.6);
+.email-form__button:hover {
+  background-image: linear-gradient(
+    135deg,
+    hsla(0, 80%, 86%, 0.7),
+    hsla(0, 74%, 74%, 0.7)
+  );
+  box-shadow: 0 15px 20px 0 rgba(206, 151, 151, 0.6);
 }
 .validation-message {
   color: var(--soft-red);
   margin: 1em 2.5em;
   font-size: 0.8em;
 }
-.validation-message--invisible{
+.validation-message--invisible {
   visibility: hidden;
 }
-.attribution{
-  font-size: .8em;
+.attribution {
+  font-size: 0.8em;
   color: var(--dark-grayish-red);
   text-align: center;
 }
-.attribution__link:link{
+.attribution__link:link {
   color: var(--soft-red);
   text-decoration: none;
 }
-.attribution__link:visited{
+.attribution__link:visited {
   color: var(--desaturated-red);
 }
 @media only screen and (min-width: 992px) {
-  body{
+  body {
     background-image: none;
   }
-  .container{
-    background-image: url("../img/bg-pattern-desktop.svg"), linear-gradient( 135deg, rgba(248, 191, 191, 0.08), rgba(238, 140, 140, 0.08));
+  .container {
+    background-image: url("../img/bg-pattern-desktop.svg"),
+      linear-gradient(
+        135deg,
+        rgba(248, 191, 191, 0.08),
+        rgba(238, 140, 140, 0.08)
+      );
     background-repeat: no-repeat;
     background-size: 58% 100%;
     height: 100vh;
     grid-template: 1fr 4fr / 11.5% 31% 15.5% 1fr;
     position: relative;
   }
-  .content{
+  .content {
     margin-top: 2.5em;
   }
-  .company-logo{
+  .company-logo {
     grid-column-start: 2;
     grid-row-start: 1;
   }
-  .company-logo__img{
+  .company-logo__img {
     height: 33px;
     width: auto;
   }
-  .banner{
+  .banner {
     background: url("../img/hero-desktop.jpg");
     background-size: cover;
     background-position: center top;
@@ -161,37 +175,37 @@ body{
     grid-row: 1 / -1;
     height: auto;
   }
-  .content{
+  .content {
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 2;
   }
-  .release{
+  .release {
     text-align: left;
   }
-  .release__title{
+  .release__title {
     letter-spacing: 17px;
     font-size: 4em;
     line-height: 1.1;
     margin: 1rem 0;
   }
-  .release__title--stylized{
+  .release__title--stylized {
     color: var(--desaturated-red);
     font-size: inherit;
     font-weight: 300;
   }
-  .release__paragraph{
+  .release__paragraph {
     color: var(--desaturated-red);
     font-size: 1rem;
     line-height: 1.7;
   }
-  .email-form{
+  .email-form {
     margin: 2.5em auto;
   }
   .email-form__input {
     height: 2em;
   }
-  .email-form__button{
+  .email-form__button {
     width: 22.5%;
   }
 }
