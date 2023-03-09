@@ -4,18 +4,17 @@
   --dark-grayish-red: hsl(0, 6%, 24%);
 }
 body {
-  margin: 0;
   font: 16px "Josefin Sans", sans-serif;
   background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%))
     no-repeat center center fixed;
   background-size: cover;
   position: relative;
+  margin: 0;
 }
 .container {
   display: grid;
   grid-template-columns: 2rem 1fr 2rem;
   grid-template-rows: 1fr;
-  /* height: 100vh; */
 }
 .company-logo {
   grid-column: 2 / 3;
@@ -34,8 +33,8 @@ body {
   grid-column: 1 / -1;
 }
 .content {
-  grid-column: 2 / 3;
   width: 100%;
+  grid-column: 2 / 3;
   margin-top: 2.1em;
 }
 .release {
@@ -70,6 +69,7 @@ body {
   margin: 1em auto 4em auto;
 }
 .email-form__input {
+  background-color: transparent;
   color: var(--dark-grayish-red);
   font-family: inherit;
   width: 100%;
@@ -77,13 +77,12 @@ body {
   padding: 1em 32% 1em 2em;
   border-radius: 30px;
   border: 1px solid var(--desaturated-red);
-  background-color: transparent;
-  opacity: 50%;
   outline: none;
+  opacity: 50%;
 }
 .email-form__input:focus {
-  opacity: 100%;
   outline: 1px solid var(--desaturated-red);
+  opacity: 100%;
 }
 .email-form__input::placeholder {
   color: var(--desaturated-red);
@@ -101,15 +100,15 @@ body {
     hsla(0, 80%, 86%, 1),
     hsla(0, 74%, 74%, 1)
   );
-  border: none;
-  border-radius: 30px;
   height: 100%;
   width: 22%;
   position: absolute;
   right: 0;
+  border: none;
+  border-radius: 30px;
   box-shadow: 0 10px 20px 0 rgba(206, 151, 151, 0.4);
-  transition: 0.2s;
   cursor: pointer;
+  transition: 0.2s;
 }
 .email-form__button:hover {
   background-image: linear-gradient(
@@ -121,15 +120,15 @@ body {
 }
 .validation-message {
   color: var(--soft-red);
-  margin: 1em 2.5em;
   font-size: 0.8em;
+  margin: 1em 2.5em;
 }
 .validation-message--invisible {
   visibility: hidden;
 }
 .attribution {
-  font-size: 0.8em;
   color: var(--dark-grayish-red);
+  font-size: 0.8em;
   text-align: center;
 }
 .attribution__link:link {
@@ -171,9 +170,9 @@ body {
     background: url("../img/hero-desktop.jpg");
     background-size: cover;
     background-position: center top;
+    height: auto;
     grid-column-start: 4;
     grid-row: 1 / -1;
-    height: auto;
   }
   .content {
     grid-column-start: 2;
@@ -184,8 +183,8 @@ body {
     text-align: left;
   }
   .release__title {
-    letter-spacing: 17px;
     font-size: 4em;
+    letter-spacing: 17px;
     line-height: 1.1;
     margin: 1rem 0;
   }
