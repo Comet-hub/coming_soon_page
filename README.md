@@ -39,8 +39,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Base Apparel coming soon page]()
-- Live Site URL: [Base Apparel coming soon page]()
+- Solution URL: [Base Apparel coming soon page](https://github.com/tu1ip/coming_soon_page)
+- Live Site URL: [Base Apparel coming soon page](https://tu1ip.github.io/coming_soon_page/)
 
 ## My process
 
