@@ -39,8 +39,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Base Apparel coming soon page](https://github.com/tu1ip/coming_soon_page)
-- Live Site URL: [Base Apparel coming soon page](https://tu1ip.github.io/coming_soon_page/)
+- Solution URL: [Base Apparel coming soon page](https://github.com/Comet-hub/coming_soon_page)
+- Live Site URL: [Base Apparel coming soon page](https://comet-hub.github.io/coming_soon_page/)
 
 ## My process
 
@@ -68,4 +68,4 @@ Deseo continuar enfocándome en el diseño responsive y el uso de unidades relat
 
 ## Author
 
-- Frontend Mentor - [@tu1ip](https://www.frontendmentor.io/profile/tu1ip)
+- Frontend Mentor - [Camilo Castellanos](https://www.frontendmentor.io/profile/tu1ip)
